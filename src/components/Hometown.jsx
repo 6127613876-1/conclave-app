@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "https://source.unsplash.com/800x600/?city,technology",
-  "https://source.unsplash.com/800x600/?city,heritage",
-  "https://source.unsplash.com/800x600/?city,night",
+  "https://upload.wikimedia.org/wikipedia/commons/5/51/Gopurams_of_the_Madurai_Meenakshi_Temple%2C_Madurai%2C_Tamil_Nadu%2C_India_%282004%29_350.jpg",
+  "https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/madurai-1654195635_b7d26f989bec2b37f093.webp",
+  "https://s7ap1.scene7.com/is/image/incredibleindia/karaikudi-madurai-tamil-nadu-hero?qlt=82&ts=1726654454398",
 ];
 
 export default function Hometown() {
