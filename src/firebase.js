@@ -4,14 +4,14 @@ import { getDatabase, ref, get } from "firebase/database";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC9t5m21qvuR6Y9MzCReIfBGDxm8xMbi6E",
-  authDomain: "fusiongreen-93d54.firebaseapp.com",
-  databaseURL: "https://fusiongreen-93d54-default-rtdb.firebaseio.com",
-  projectId: "fusiongreen-93d54",
-  storageBucket: "fusiongreen-93d54.appspot.com",
-  messagingSenderId: "1069757343911",
-  appId: "1:1069757343911:web:d42be153429f3f34d91382",
-  measurementId: "G-BPY7HF2CE4"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DB_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
