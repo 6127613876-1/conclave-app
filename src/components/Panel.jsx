@@ -41,7 +41,7 @@ const sessions = [
 
 export default function Panel() {
   return (
-    <section id="panel" className="py-16 px-4 bg-gray-100">
+    <section id="panel" className="py-16 px-4 bg-gray-100 m-32">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">CHECK OUR PANELS</h2>
         <div className="grid md:grid-cols-2 gap-8">

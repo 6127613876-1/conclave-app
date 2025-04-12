@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ref, onValue } from 'firebase/database';
 import { db } from '../firebase';
 import { FaMicrochip } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 export default function Hackathon() {
   const [data, setData] = useState([]);
 
@@ -32,35 +32,40 @@ export default function Hackathon() {
   );
 }
 
-function Card({ title, description, image }) {
+function Card({ id, title, description, image }) {
   const [readMore, setReadMore] = useState(false);
-
   const toggleReadMore = () => setReadMore((prev) => !prev);
 
-  const shortText = description.length > 100 ? description.substring(0, 100) + '...' : description;
+  const shortText =
+    description.length > 100 ? description.substring(0, 100) + '...' : description;
 
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg bg-white">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="relative px-6 pb-6 pt-12 -mt-10 bg-white mx-4 rounded-lg shadow-lg z-10">
-        <div className="absolute -top-8 left-1/2 -translate-x-1/2">
-          <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center shadow-md">
-            <FaMicrochip className="text-white text-2xl" />
+    <Link to={`/hackathon/${id}`}>
+      <div className="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow duration-300">
+        <img src={image} alt={title} className="w-full h-48 object-cover" />
+        <div className="relative px-6 pb-6 pt-12 -mt-10 bg-white mx-4 rounded-lg shadow-lg z-10">
+          <div className="absolute -top-8 left-1/2 -translate-x-1/2">
+            <div className="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center shadow-md">
+              <FaMicrochip className="text-white text-2xl" />
+            </div>
           </div>
-        </div>
-        <h3 className="text-xl font-semibold text-center mt-2">{title}</h3>
-        <p className="text-sm text-gray-600 text-center mt-2">
-          {readMore ? description : shortText}
-        </p>
-        {description.length > 100 && (
-          <p
-            onClick={toggleReadMore}
-            className="text-orange-500 text-sm text-center mt-2 cursor-pointer hover:underline"
-          >
-            {readMore ? 'Read Less' : 'Read More'}
+          <h3 className="text-xl font-semibold text-center mt-2">{title}</h3>
+          <p className="text-sm text-gray-600 text-center mt-2">
+            {readMore ? description : shortText}
           </p>
-        )}
+          {description.length > 100 && (
+            <p
+              onClick={(e) => {
+                e.preventDefault(); // Prevent redirect when toggling text
+                toggleReadMore();
+              }}
+              className="text-orange-500 text-sm text-center mt-2 cursor-pointer hover:underline"
+            >
+              {readMore ? 'Read Less' : 'Read More'}
+            </p>
+          )}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

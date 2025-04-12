@@ -23,7 +23,7 @@ export default function Schedule() {
 
 
   return (
-    <section id="schedule" className="py-12 px-6 bg-gray-100">
+    <section id="schedule" className="py-12 px-6 bg-gray-100 m-32">
       <h2 className="text-3xl font-bold mb-6">Event Schedule</h2>
 
 

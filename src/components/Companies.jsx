@@ -14,7 +14,7 @@ export default function Companies() {
   }, []);
 
   return (
-    <section id="companies" className="py-12 px-6 bg-gray-100">
+    <section id="companies" className="py-12 px-6 bg-gray-100 m-32">
       <h2 className="text-3xl font-bold mb-6 text-center">Partnering Companies</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {companies.map((comp, i) => (

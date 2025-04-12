@@ -2,7 +2,7 @@ import { FaCreditCard } from "react-icons/fa";
 
 export default function Registration() {
   return (
-    <section id="registration" className="py-12 px-6 bg-gray-100">
+    <section id="registration" className="py-12 px-6 bg-gray-100 m-32">
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
         <h2 className="text-3xl font-bold text-center mb-4">Payment Information</h2>
 

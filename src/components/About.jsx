@@ -5,7 +5,7 @@ import AbtImg from "../assets/img/about.jpg";
 import AbtImg2 from "../assets/img/about-2.jpg";
 export default function About() {
   return (
-    <section id="about" className="py-16 px-4 bg-gray-100">
+    <section id="about" className="py-16 px-4 bg-gray-100 m-32">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Left Image */}
