@@ -18,17 +18,17 @@ import Hackathon from './components/Hackathon'; // Correct import for Hackathon
 
 function App() {
   return (
-    <AuthProvider>
+    // <AuthProvider>
       <Router>
         <Routes>
           {/* Public Route for Login */}
-          <Route path="/login" element={<Login />} />
+          {/* <Route path="/login" element={<Login />} /> */}
 
           {/* Protected Routes */}
           <Route
             path="*"
             element={
-              <ProtectedRoute>
+              // <ProtectedRoute>
                 <>
                   <Navbar />
                   <Routes>
@@ -46,12 +46,11 @@ function App() {
                   </Routes>
                   <Footer />
                 </>
-              </ProtectedRoute>
             }
           />
         </Routes>
       </Router>
-    </AuthProvider>
+    // </AuthProvider>
   );
 }
 
