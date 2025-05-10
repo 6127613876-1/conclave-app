@@ -20,11 +20,11 @@ export default function Navbar() {
   const [active, setActive] = useState('/');
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    signOut(auth).then(() => {
-      navigate('/login');
-    });
-  };
+  // const handleLogout = () => {
+  //   signOut(auth).then(() => {
+  //     navigate('/login');
+  //   });
+  // };
 
   return (
     
