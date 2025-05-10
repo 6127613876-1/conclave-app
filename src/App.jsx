@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
-import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Panel from './components/Panel';
@@ -11,7 +10,6 @@ import Companies from './components/Companies';
 import Schedule from './components/Schedule';
 import Sponsors from './components/Sponsors';
 import Hometown from './components/Hometown';
-import { AuthProvider } from './context/AuthContext';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Hackathon from './components/Hackathon'; // Correct import for Hackathon
