@@ -12,7 +12,7 @@ const navLinks = [
   { name: 'registration', path: '/registration' },
   { name: 'companies', path: '/companies' },
   { name: 'schedule', path: '/schedule' },
-  { name: 'sponsors', path: '/sponsors' },
+  // { name: 'sponsors', path: '/sponsors' },
   { name: 'about', path: '/about' },
 ];
 
