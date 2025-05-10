@@ -16,15 +16,9 @@ import Hackathon from './components/Hackathon';
 
 function App() {
   return (
-<<<<<<< HEAD
 
       <>
         <Navbar />
-=======
-    // <AuthProvider>
-    <Router>
-      <Navbar />
->>>>>>> 4d32806886b9b02173d130a3724ea506361ef56e
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
@@ -39,12 +33,7 @@ function App() {
         <Route path="/registration" element={<Registration />} />
       </Routes>
       <Footer />
-<<<<<<< HEAD
       </>
-=======
-    </Router>
-    // </AuthProvider>
->>>>>>> 4d32806886b9b02173d130a3724ea506361ef56e
   );
 }
 
