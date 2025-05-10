@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className='pl-10'></div>
           <button
             onClick={handleLogout}
-            className="text-sm border border-red-400 px-3 py-1 rounded hover:bg-red-50 hover:text-red-600 transition"
+            className="text-sm border border-red-400 px-3 py-1 rounded hover:bg-red-50 hover:text-red-600 transition cursor-pointer"
           >
             Logout
           </button>
