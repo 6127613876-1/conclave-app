@@ -5,10 +5,12 @@ export default function Committee() {
     { name: "Mr. Hari Thiagarajan", job: "Chairman & Correspondent", image: "https://www.tce.edu/sites/default/files/2023-03/Trustee.jpeg",role:"Chief Patron" },
     { name: "Dr. L Ashok Kumar", job: "Principal", image: "https://www.tce.edu/sites/default/files/2024-09/PRINCIPAL.jpg",role:"Patron" },
     { name: "Dr. G. K. Raajesh", job: "Dean (CD)", image: "https://www.tce.edu/sites/default/files/2024-09/gk.jpeg" ,role:"Convener" },
+    { name: "Dr. K. Hariharan", job: "Dean (III)", image: "https://www.tce.edu/sites/default/files/2024-09/khhece.jpg" ,role:"Convener" },
     { name: "Dr. N. B. Balamurugan", job: "Assoc. Dean (CD), Professor, ECE", image: "https://www.tce.edu/sites/default/files/2023-07/nbbece.jpg",role:"Organizing Secretary" },
     { name: "Dr. M. Vijayalakshmi", job: "Professor, CSE", image: "https://www.tce.edu/sites/default/files/2023-07/mvcse.jpg",role:"Organizing Secretary" },
     { name: "Mr. S. A. R. Sheik Masthan", job: "Asst. Professor, Mechatronics", image: "https://www.tce.edu/sites/default/files/2023-05/sarsmech.jpg",role:"Coordinator" },
     { name: "Mrs. C. V. Nisha Angeline", job: "Asst. Professor, IT", image: "https://www.tce.edu/sites/default/files/2023-07/cvnait.jpg" ,role:"Coordinator"},
+    { name: "Dr. G. Ananthi", job: "Asst. Professor, ECE", image: "https://www.tce.edu/sites/default/files/2023-07/gaece.jpg" ,role:"Coordinator"},
     { name: "Dr. S. Ilankumaran", job: "Asst. Professor, IT", image: "https://www.tce.edu/sites/default/files/2023-07/siit.jpg",role:"Coordinator" },
     { name: "Mr. S. Arunkumar", job: "Asst. Professor, Mechanical", image: "https://www.tce.edu/sites/default/files/2023-10/sakmech.jpg",role:"Coordinator" },
    
@@ -29,7 +31,7 @@ export default function Committee() {
 function PersonCard({ name, job, image,role }) {
   return (
     <div className="w-80 bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-      <img src={image} alt={name} className="w-full h-80 object-cover" />
+      <img src={image} alt={name} className="w-full h-100 object-cover" />
       <div className="p-4 text-center flex flex-col justify-between flex-1">
         <div>
           <h4 className="font-semibold text-gray-800 text-lg">{name}</h4>
