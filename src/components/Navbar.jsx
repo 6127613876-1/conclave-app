@@ -1,6 +1,6 @@
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { FaTwitter, FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-
+import React from 'react';
 const navLinks = [
   { name: 'home', path: '/' },
   { name: 'panel', path: '/panel' },
